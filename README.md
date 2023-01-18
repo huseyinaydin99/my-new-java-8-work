@@ -2,5 +2,9 @@
 Default method, Interface içerisinde gövdeli method tanımlayabilme, yeni derleyici araçları,
 Stream API ve DateTime API. 
 
-Bu proje normal Java projesidir, maven projesi değildir.
+![Java 8](java.png "Java - 8")
+
+
+Bu proje normal Java projesidir, maven projesi değildir.<br>
 Normal proje olarak açınız.
+File > Import > General > Existing Project into Workspace > İlgili klasörü seçin > Tamam.!

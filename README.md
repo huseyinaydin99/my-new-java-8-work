@@ -7,4 +7,4 @@ Stream API ve DateTime API.
 
 Bu proje normal Java projesidir, maven projesi değildir.<br>
 Normal proje olarak açınız.
-File > Import > General > Existing Project into Workspace > İlgili klasörü seçin > Tamam.!
+File > Import > General > Existing Project into Workspace > İlgili klasörü seçin.

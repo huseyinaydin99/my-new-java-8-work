@@ -32,7 +32,7 @@ public class MapVsFlatMap {
         System.out.println(phoneNumbers);
 
         //List<Customer>  convert List<String> -> Veri dönüşümü müşteri listesinden String listesine
-        //mapping : customer -> phone Numbers
+        //mapping : customer -> telefon numaraları
         //customer -> customer.getPhoneNumbers()  ->> one to many mapping(bire çok eşleme)
         List<String> phones = customers.stream()
                 .flatMap(customer -> customer.getPhoneNumbers().stream())

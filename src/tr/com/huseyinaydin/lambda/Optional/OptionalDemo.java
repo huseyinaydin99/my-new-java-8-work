@@ -20,17 +20,13 @@ public class OptionalDemo {
         List<Customer> customers = EkartDataBase.getAll();
        return customers.stream()
                 .filter(customer -> customer.getEmail().equals(email))
-                .findAny().orElseThrow(()->new Exception("no customer present with this email id"));
+                .findAny().orElseThrow(()->new Exception("Böyle bir e posta adresi yok."));
 
     }
 
     public static void main(String[] args) throws Exception {
 
         Customer customer=new Customer(101, "hüseyin", "test@gmail.com", Arrays.asList("397937955", "21654725"));
-
-        //empty
-        //of
-        //ofNullable
 
         Optional<Object> emptyOptional = Optional.empty();
         System.out.println(emptyOptional);
@@ -44,10 +40,10 @@ public class OptionalDemo {
         }*/
        // System.out.println(emailOptional2.orElse("default@email.com"));
 
-       // System.out.println(emailOptional2.orElseThrow(()->new IllegalArgumentException("email not present")));
+       // System.out.println(emailOptional2.orElseThrow(()->new IllegalArgumentException("e-posta mevcut değil")));
 
 
-        System.out.println(emailOptional2.get().map(String::toUpperCase).orElseGet(()->"default email..."));
+        System.out.println(emailOptional2.get().map(String::toUpperCase).orElseGet(()->"varsayılan email..."));
 
         getCustomerByEmailId("pqr");
     }
